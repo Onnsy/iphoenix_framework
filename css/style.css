@@ -41,6 +41,40 @@ a.nav-item.is-tab {
     border: 0;
 }
 
+.sub-title{
+	margin-bottom: 40px;
+}
+
+.margin-0{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.plugin {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color: #fff;
+}
+
+
+.plugin.active::before {
+    content: "\e013";
+	color: #23d160;
+}
+
+.plugin.deactive::before {
+    content: "\e014";
+	color: #ff3860;
+}
+
+
 @media (min-width: 992px) and (max-width: 1400px) {
 	.container {
     	max-width: 90% !important;
